@@ -9,8 +9,8 @@ import css from "../App/App.module.css";
 export default function App() {
   return (
     <main>
-      {/* Task 1 */}
       <section className={css.section}>
+        <h2>Task 1</h2>
         <Profile
           name={userData.username}
           tag={userData.tag}
@@ -20,9 +20,11 @@ export default function App() {
         />
       </section>
       <section>
+        <h2>Task 2</h2>
         <FriendList friends={friends} />
       </section>
       <section>
+        <h2>Task 3</h2>
         <TransactionHistory transactions={transactions} />
       </section>
     </main>

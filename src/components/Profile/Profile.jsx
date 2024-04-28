@@ -1,3 +1,5 @@
+import css from "../Profile/Profile.module.css";
+
 export default function Profile({
   username,
   tag,
@@ -6,28 +8,33 @@ export default function Profile({
   stats: { followers, views, likes },
 }) {
   return (
-    <div>
-      <div>
-        <img src={avatar} alt="User avatar" height={300} />
+    <>
+      <div className={css.container}>
+        <img
+          className={css.profileImage}
+          src={avatar}
+          alt="User avatar"
+          height={200}
+        />
         <p>{username}</p>
         <p>@{tag}</p>
         <p>{location}</p>
       </div>
 
-      <ul>
+      <ul className={css.profileList}>
         <li>
-          <span>Followers</span>
+          <span>Followers:</span>
           <span>{followers}</span>
         </li>
         <li>
-          <span>Views</span>
+          <span>Views:</span>
           <span>{views}</span>
         </li>
         <li>
-          <span>Likes</span>
+          <span>Likes:</span>
           <span>{likes}</span>
         </li>
       </ul>
-    </div>
+    </>
   );
 }
