@@ -9,8 +9,8 @@ import css from "../App/App.module.css";
 export default function App() {
   return (
     <main>
+      <h2>Task 1</h2>
       <section className={css.section}>
-        <h2>Task 1</h2>
         <Profile
           name={userData.username}
           tag={userData.tag}

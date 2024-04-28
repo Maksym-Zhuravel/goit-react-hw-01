@@ -4,9 +4,10 @@
   flex-direction: column;
   align-items: center;
 }
+
 .profileImage {
-  border-radius: 20%;
-  border: 4px dotted grey;
+  background-color: darkgrey;
+  border-radius: 50%;
 }
 
 .profileList {
