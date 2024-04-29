@@ -12,11 +12,20 @@
 
 .profileList {
   display: flex;
+  justify-content: center;
   list-style-type: none;
-  padding: 0;
 }
 
 .profileList span {
-  margin-left: 5px;
+  margin-left: 15px;
   font-weight: bold;
+}
+
+.profileItem:nth-child(-n + 1) span {
+  margin-left: 0;
+}
+
+.profileItem {
+  display: flex;
+  flex-direction: column;
 }

@@ -1,7 +1,7 @@
 import css from "../Profile/Profile.module.css";
 
 export default function Profile({
-  username,
+  name,
   tag,
   location,
   avatar,
@@ -16,22 +16,22 @@ export default function Profile({
           alt="User avatar"
           height={200}
         />
-        <p>{username}</p>
+        <p>{name}</p>
         <p>@{tag}</p>
         <p>{location}</p>
       </div>
 
       <ul className={css.profileList}>
-        <li>
-          <span>Followers:</span>
+        <li className={css.profileItem}>
+          <span>Followers</span>
           <span>{followers}</span>
         </li>
-        <li>
-          <span>Views:</span>
+        <li className={css.profileItem}>
+          <span>Views</span>
           <span>{views}</span>
         </li>
-        <li>
-          <span>Likes:</span>
+        <li className={css.profileItem}>
+          <span>Likes</span>
           <span>{likes}</span>
         </li>
       </ul>

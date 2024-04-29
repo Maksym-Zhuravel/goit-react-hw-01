@@ -19,8 +19,8 @@ export default function App() {
           stats={userData.stats}
         />
       </section>
-      <section>
-        <h2>Task 2</h2>
+      <h2>Task 2</h2>
+      <section className={css.section}>
         <FriendList friends={friends} />
       </section>
       <section>
