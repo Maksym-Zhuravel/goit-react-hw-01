@@ -23,8 +23,8 @@ export default function App() {
       <section className={css.section}>
         <FriendList friends={friends} />
       </section>
-      <section>
-        <h2>Task 3</h2>
+      <h2>Task 3</h2>
+      <section className={css.section}>
         <TransactionHistory transactions={transactions} />
       </section>
     </main>

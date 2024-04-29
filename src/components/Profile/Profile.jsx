@@ -16,7 +16,7 @@ export default function Profile({
           alt="User avatar"
           height={200}
         />
-        <p>{name}</p>
+        <p>{<b>{name}</b>}</p>
         <p>@{tag}</p>
         <p>{location}</p>
       </div>
